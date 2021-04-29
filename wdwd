@@ -140,8 +140,8 @@ Module Module1
         Dim Player1Turn As Boolean = True
         Dim ValidCommand As Boolean
         Dim Commands As New List(Of String)
-        Console.WriteLine("Player One current state - " & Player1.GetStateString())
-        Console.WriteLine("Player Two current state - " & Player2.GetStateString())
+        Console.WriteLine("player one current state - " & Player1.GetStateString())
+        Console.WriteLine("player two current state - " & Player2.GetStateString())
         Do
             Console.WriteLine(Grid.GetGridAsString(Player1Turn))
             If Player1Turn Then
@@ -791,3 +791,4 @@ Class Player
         PiecesInSupply -= 1
     End Sub
 End Class
+
